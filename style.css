@@ -208,6 +208,27 @@ footer {
     box-shadow: 10px 10px 10px 10px black;
 }
 
+.menu-opcoes.show {
+    display: block;
+}
+
+.hamburguer.active .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburguer.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.btn:hover {
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+
+.hamburguer.active .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
 .menu-opcoes ul{
     list-style-type: none;
     padding: 0;
@@ -221,4 +242,18 @@ footer {
 .menu-opcoes a{
     text-decoration: none;
     color: #333;
+}
+
+.ll{
+    margin: auto 0;
+    right: 20px;
+    left: 20px;
+}
+
+.kk{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    width: 400px;
+    border-right: 200px;
 }

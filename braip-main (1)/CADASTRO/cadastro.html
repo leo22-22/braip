@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <header>
+        <h1 id="header">AFILIADO DE SUCESSO</h1>
+        <a href="../braip-main/index.html"><h5 id="header1">Voltar Inicío</h5></a>
+    </header>
+    <div class="hamburguer" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>    
+
+    <nav id="menu" class="menu-opcoes">
+        <ul>
+            <li><a href="../braip-main/produtos.html">Produtos</a></li>
+            <li>------------------------------</li>
+            <li><a href="#about">Camisas</a></li>
+            <li>------------------------------</li>
+            <li><a href="../SERVICOS/servicos.html">Serviços</a></li>
+            <li>------------------------------</li>
+            <li><a href="#contact">Bora Trabalhar Juntos!</a></li>
+            <li>------------------------------</li>
+        </ul>
+
+        <h1>CADASTRO</h1>
+    </nav>
+
+    <form action="cadastro.php" method="post" onsubmit="return validateForm()">
+        <table>
+            <tr>
+                <td>Nome:</td>
+                <td><input type="text" id="nome" name="nome" required></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td>CPF/CNPJ:</td>
+                <td><input type="text" id="cpf_cnpj" name="cpf_cnpj" required></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Cadastrar"></td>
+            </tr>
+        </table>
+    </form>
+
+    <script>src="cadastro.js"</script>
+</body>
+</html>

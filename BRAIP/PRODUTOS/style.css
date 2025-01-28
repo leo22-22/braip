@@ -11,8 +11,6 @@ body {
     padding: 0;
     height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
     font-family: 'Poppins', Arial, sans-serif;
     text-align: center;
@@ -20,19 +18,6 @@ body {
     background: linear-gradient(-45deg, #233b53, #4CA1AF, #1c3046, #3b8848);
     background-size: 400% 400%;
     animation: mudarCores 25s ease infinite;
-}
-
-header {
-    width: 100%;
-    padding: 20px 0;
-    background-color: transparent;
-    position: fixed;
-    top: 0;
-    left: 0;
-    text-align: center;
-    color: #FFD700;
-    font-size: 24px;
-    font-weight: bold;
 }
 
 @keyframes mudarCores {
@@ -94,6 +79,21 @@ p {
     margin-bottom: 20px;
 }
 
+/* --- Imagens --- */
+img {
+    width: 500px;
+    height: 350px;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.8);
+}
+
+/* --- Botões --- */
 .btn {
     background-color: #FFD700;
     color: #2C3E50;
@@ -111,7 +111,7 @@ p {
     transform: translateY(-3px);
     color: white;
 }
-
+  
 /* --- Cards --- */
 #card {
     background-color: rgba(255, 255, 255, 0.1);
@@ -226,78 +226,3 @@ footer a:hover {
     justify-content: space-around;
 }
 
-
-table {
-    border: 2px solid #1c3046;
-    border-radius: 10px;
-    padding: 20px;
-    background-color: #f9f9f9;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-td {
-    padding: 10px;
-}
-
-input[type="text"],
-input[type="email"] {
-    width: 100%;
-    padding: 8px;
-    margin: 4px 0;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-input[type="submit"] {
-    width: 100%;
-    background-color: #1c3046;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-input[type="submit"]:hover {
-    background-color: #3e5a7a;
-}
-
-footer {
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    padding: 20px;
-    background: linear-gradient(-45deg, #233b53, #1c3046);
-    color: white;
-    text-align: center;
-    font-size: 14px;
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.3);
-    z-index: 10;
-}
-
-footer div {
-    margin: 0 10px;
-}
-
-footer h4 {
-    margin: 5px 0;
-    font-size: 16px;
-    font-weight: bold;
-    color: #ffffff;
-}
-
-footer p {
-    margin: 0;
-    font-size: 12px;
-    color: #eeeeee;
-}
-
-footer a:hover {
-    color: #FF4500;
-    text-decoration: underline;
-}

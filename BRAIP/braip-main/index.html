@@ -10,41 +10,74 @@
     <header>
         <h1 id="header">AFILIADO DE SUCESSO</h1>
     </header>
+    <!-- Menu Hambúrguer -->
     <div class="hamburguer" onclick="toggleMenu()">
         <div class="bar"></div>
         <div class="bar"></div>
         <div class="bar"></div>
-    </div>    
+    </div>
 
     <nav id="menu" class="menu-opcoes">
         <ul>
-            <li><a href="produtos.html">Produtos</a></li>
-            <li>------------------------------</li>
-            <li><a href="#about">Camisas</a></li>
-            <li>------------------------------</li>
+            <li><a href="../PRODUTOS/produtos.html">Produtos</a></li>
+            <li><hr></li>
+            <li><a href="http://localhost/BRAIP/CAMISAS/camisas.php">Camisas</a></li>
+            <li><hr></li>
             <li><a href="../SERVICOS/servicos.html">Serviços</a></li>
-            <li>------------------------------</li>
-            <li><a href="../CADASTRO/cadastro.html">Bora Trabalhar Juntos!</a></li>
-            <li>------------------------------</li>
+            <li><hr></li>
+            <li><a href="http://localhost/BRAIP/CADASTRO/cadastro.php">Bora Trabalhar Juntos!</a></li>
         </ul>
     </nav>
 
-<div id="center">
-    <h1>BEM-VINDO AO AFILIADO DE SUCESSO!</h1>
-    <div class="ll">
-    <h1>O QUE SOMOS?</h1>
-    <h2>
-        A marca Afiliado de Sucesso oferece um inovador processo de vendas através de filiação com as melhores empresas. <br>Nós cuidamos de todo o marketing e do processo de vendas, desde o primeiro contato até o fechamento do pedido. <br>O único trabalho da empresa fornecedora é finalizar o pedido, garantindo uma experiência fluida e eficiente.
-        <br>Trabalhamos de forma 100% online, com total segurança e sem chances de golpe. <br>Se você tiver qualquer dúvida, não hesite em entrar em contato conosco por email, WhatsApp ou redes sociais. <br>
-        Venha fazer parte desse sucesso! Desfrute de uma variedade de produtos, <br>que vão desde saúde e bem-estar até camisas dos seus times de futebol favoritos.
-    </h2>
+    <div id="center">
+        <div class="card">
+            <h1>O QUE SOMOS?</h1>
+            <h2>
+                A marca Afiliado de Sucesso oferece um inovador processo de vendas através de filiação com as melhores empresas. <br>Nós cuidamos de todo o marketing e do processo de vendas, desde o primeiro contato até o fechamento do pedido. <br>O único trabalho da empresa fornecedora é finalizar o pedido, garantindo uma experiência fluida e eficiente.
+                <br>Trabalhamos de forma 100% online, com total segurança e sem chances de golpe. <br>Se você tiver qualquer dúvida, não hesite em entrar em contato conosco por email, WhatsApp ou redes sociais. <br>
+                Venha fazer parte desse sucesso! Desfrute de uma variedade de produtos, <br>que vão desde saúde e bem-estar até camisas dos seus times de futebol favoritos.
+            </h2>
+        </div>
 
-    <h1>O QUE FAZEMOS?</h1>
-    <h2>Afiliados de Sucesso, busca o melhor para todos, tanto para quem trabalhamos, <br>quanto para quem vendemos,buscar o sucesso de uma empresa estável, confiável, com produtos de belezea aprovados pela ANVISA, <br>serviços conversados prontamente com os donos e sócios das empresas, camisas de linha, de ponta, com promoções e de excelentíssima qualidade.</h2>
-    
-    <img src="capa.jpg" alt="" >
+        <div class="card">
+            <h1>O QUE FAZEMOS?</h1>
+            <h2>Afiliados de Sucesso, busca o melhor para todos, tanto para quem trabalhamos, <br>quanto para quem vendemos,buscar o sucesso de uma empresa estável, confiável, com produtos de beleza aprovados pela ANVISA, <br>serviços conversados prontamente com os donos e sócios das empresas, camisas de linha, de ponta, com promoções e de excelentíssima qualidade.</h2>
+        </div>
+        
+        <div class="card">
+            <h1>NOSSOS PRODUTOS</h1>
+            <h2>Oferecemos uma ampla gama de produtos de alta qualidade, incluindo:</h2>
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="../PRODUTOS/produtos.html"><img src="anvisa.webp" alt="Produtos de saúde e bem-estar"></a>
+                        <p>Produtos de saúde e bem-estar</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/camisas.jpg" alt="Camisas de times de futebol">
+                        <p>Camisas de times de futebol</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="ranuci.gif" alt="Serviços personalizados para empresas">
+                        <p>Serviços personalizados para empresas</p>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" onclick="prevSlide()">&#10094;</a>
+                <a class="carousel-control-next" onclick="nextSlide()">&#10095;</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h1>FAQ</h1>
+            <h1>Perguntas Frequentes:</h1>
+            <h3>Como posso me cadastrar?</h3>
+            <h6>Para se cadastrar, visite a seção <a href="../CADASTRO/cadastro.php">Bora Trabalhar Juntos!</a> e preencha o formulário.</h6>
+            <h3>Quais são os métodos de pagamento aceitos?</h3>
+            <h6>Aceitamos todos os principais cartões de crédito, débito e pagamentos online.</h6>
+            <h3>Como posso entrar em contato?</h3>
+            <h6>Você pode nos contatar por email, WhatsApp ou redes sociais. Veja a seção de contato abaixo para mais detalhes.</h6>
+        </div>
     </div>
-</div>
 
     <footer>
         <div id="contato">
